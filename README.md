@@ -11,7 +11,7 @@ This action extracts and exposes the repository **name** and **URL** as step out
 | Output | Description | Example |
 |--------|-------------|---------|
 | `repo-name` | Repository name only (the part after the `/` in `owner/repo`) | `gha-composite-repo-details` |
-| `repo-url` | Repository URL in `https://` format (`.git` suffix removed) | `https://github.com/faccomichele-org/gha-composite-repo-details` |
+| `repo-url` | Repository URL in `https://` format (`.git` suffix removed) | `https://github.com/faccomichele/gha-composite-repo-details` |
 
 ## Usage
 
@@ -22,7 +22,7 @@ jobs:
     steps:
       - name: Get repository details
         id: details
-        uses: faccomichele-org/gha-composite-repo-details@main
+        uses: faccomichele/gha-composite-repo-details@main
 
       - name: Print repository details
         run: |
